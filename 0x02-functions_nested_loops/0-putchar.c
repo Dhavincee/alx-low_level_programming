@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * main - Entry point
  * _putchar : print the alphabets putchar
  * Return: Always 0 (Success)

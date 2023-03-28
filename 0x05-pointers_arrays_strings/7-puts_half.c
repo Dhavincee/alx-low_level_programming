@@ -22,4 +22,10 @@ void puts_half(char *str)
 			_putchar(str[f]);
 		_putchar('\n');
 	}
+	else if (julian % 2 != 0)
+	{
+		for (f = (julian - 1) / 2; str[f] != '\0'; f++)
+			_putchar(str[f]);
+		_putchar('\n');
+	}
 }

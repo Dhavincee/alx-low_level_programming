@@ -18,11 +18,10 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		printf("Error\n");
+		return (1);
 	}
-	else
-	{
-		result = num1 * num2;
-		printf("%d\n", result);
-	}
+	result = num1 * num2;
+	printf("%d\n", result);
+
 	return (EXIT_SUCCESS);
 }

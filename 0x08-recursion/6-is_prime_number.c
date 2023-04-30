@@ -3,20 +3,23 @@
 /**
  * is_prime_number - function to check if a number is a prime
  * @n: integer to be checked
- * Return: Always 0 (Success)
+ * Return:  1 if the input integer is a prime number, otherwise return 0
  */
 int is_prime_number(int n)
 {
+	int i;
+
 	if (n <= 1)
 	{
 		return (0);
 	}
-	else if (n % 1 == 0 && n % 2 == 0 && n % 5 == 0)
+
+	for (i = 2; i * i <= n; i++)
 	{
-		return (0);
+		if (n % i == 0)
+		{
+			return (0);
+		}
 	}
-	else
-	{
-		return (1);
-	}
+	return (1);
 }
